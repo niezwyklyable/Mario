@@ -1,0 +1,145 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: darkslategrey; /* domyslny: #f6f6f6 */
+    user-select: none;
+}
+
+#container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1535px;
+}
+
+#buttons {
+    float: left;
+    width: 290px;
+    margin-top: 100px;
+}
+
+#game {
+    float: left;
+    width: 955px;
+    position: relative;
+    top: 340px;
+}
+
+#rules {
+    float: left;
+    width: 290px;
+    height: 100%;
+    margin-top: 20px;
+}
+
+.level {
+    margin-top: 50px;
+    margin-left: 35px;
+    background-color: #222222;
+    color: green;
+    font-size: 30px;
+    border-color: black;
+    height: 150px;
+    width: 220px;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+    .level:focus {
+        outline: none;
+    }
+
+    .level:hover {
+        opacity: 1;
+    }
+
+
+.slidecontainer {
+    margin-top: 50px;
+    width: 100%;
+}
+
+.slider {
+    -webkit-appearance: none; /* Override default CSS styles */
+    width: 100%; /* Full-width */
+    height: 25px; /* Specified height */
+    background: #222222; /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 0.8; /* Set transparency (for mouse-over effects on hover) */
+}
+
+    .slider:hover {
+        opacity: 1; /* Fully shown on mouse-over */
+    }
+
+    .slider::-webkit-slider-thumb {
+        -webkit-appearance: none; /* Override default look */
+        width: 25px; /* Set a specific slider handle width */
+        height: 25px; /* Slider handle height */
+        background: green; /* Green background */
+        cursor: pointer; /* Cursor on hover */
+    }
+
+#mute {
+    margin-top: 30px;
+    margin-left: 90px;
+    background-color: #222222;
+    color: green;
+    font-size: 30px;
+    border-color: black;
+    height: 75px;
+    width: 110px;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+    #mute:focus {
+        outline: none;
+    }
+
+    #mute:hover {
+        opacity: 1;
+    }
+
+#legend {
+    background-color: #222222;
+    border: 2px solid #111;
+    float: left;
+}
+
+#description {
+    width: 234px;
+    height: 669px;
+    background-color: #222222;
+    color: green;
+    border: 2px solid #111;
+    font-size: 15px;
+    float: left;
+}
+
+.game-canvas {
+    display: block;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border: 2px solid #111;
+}
+
+#sky-canvas {
+    z-index: 1; /* niebo jest najnizsza warstwa */
+}
+
+#bg-canvas {
+    z-index: 2; /* mapa jest rysowana na tle nieba */
+}
+
+#fg-canvas {
+    z-index: 3; /* postac jest rysowana na tle mapy */
+}
+
+@font-face {
+    font-family: "PixelEmulator";
+    src: url("../font/Pixel Emulator.otf");
+}
